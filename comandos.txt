@@ -1,0 +1,7 @@
+cd teste-sonar/
+
+node src/index.js
+
+npm run test
+
+npm run sonar

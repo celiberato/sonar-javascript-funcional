@@ -1,0 +1,34 @@
+{
+  "name": "sonar-javascript-funcional",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sonar-project.js",
+  "scripts": {
+    "sonar": "node sonar-project.js",
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testResultsProcessor": "jest-sonar-reporter"
+  },
+  "jestSonar": {
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest-sonar-reporter": "^2.0.0",
+    "sonarqube-scanner": "^2.8.2",
+    "supertest": "^6.3.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "jest": "^29.3.1"
+  }
+}
